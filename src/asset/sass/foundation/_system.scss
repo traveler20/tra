@@ -1,0 +1,46 @@
+/* system
+--------------------------- */
+
+// color system
+// ---------------------
+$c-base: #efefef;
+$c-base-sub: #fff;
+$c-base-dark: #999; // footer only
+$c-base-right: #ccc;
+$c-body: #333;
+$c-accent: #6997c5;
+
+$transition-base: all 0.4s;
+
+// font system
+// ---------------------
+@mixin garamond($weight: bold) {
+	font-family: "Cormorant Garamond", serif;
+	font-weight: $weight;
+}
+
+// responsive system
+// ---------------------
+@mixin breakpoint($point) {
+	@if $point == tablet {
+		@media (min-width: 640px) {
+			@content;
+		}
+	}
+	@if $point == pc {
+		@media (min-width: 890px) {
+			@content;
+		}
+	}
+}
+
+.pc-only {
+	display: none;
+}
+@include breakpoint(tablet) {
+}
+@include breakpoint(pc) {
+	.pc-only {
+		display: inline-block;
+	}
+}
