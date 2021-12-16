@@ -21,7 +21,7 @@
 	}
 	&:hover {
 		color: s.$c-accent;
-		background-color: s.$c-base;
+		background-color: transparent;
 	}
 
 	@include s.breakpoint(tablet) {

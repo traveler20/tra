@@ -25,7 +25,9 @@
  * project
  -------------------*/
 @use "./object/project/fv";
+@use "./object/project/service";
 @use "./object/project/about";
+@use "./object/project/feature";
 @use "./object/project/contact";
 
 /*-------------------

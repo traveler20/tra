@@ -4,13 +4,28 @@
 
 .p-fv {
 	height: 70vh;
-	background: url(https://images.unsplash.com/photo-1517495306984-f84210f9daa8);
+	background: url(https://images.unsplash.com/photo-1604328698692-f76ea9498e76);
 	background-size: cover;
+	background-position: center;
 
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	color: s.$c-base;
+
+	position: relative;
+	z-index: 0;
+	&::before {
+		content: "";
+		position: absolute;
+		z-index: -1;
+		/* 輪郭がぼやけてしまうのでブラー範囲を広げる */
+		top: 0;
+		bottom: 0;
+		left: -5px;
+		right: -5px;
+		background-color: rgba($color: s.$c-body, $alpha: 0.6);
+	}
 
 	&__title {
 		font-size: 8rem;

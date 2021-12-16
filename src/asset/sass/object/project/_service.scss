@@ -1,0 +1,48 @@
+/* p-service
+--------------------------- */
+@use "./../../foundation/system" as s;
+
+.p-service {
+	padding: 0 0 100px;
+	&__content {
+		display: flex;
+		flex-direction: column;
+		gap: 24px;
+	}
+	&__title {
+		background-color: s.$c-base-sub;
+		padding: 36px;
+		margin: -64px 0 0;
+		z-index: 2;
+		h2 {
+			color: s.$c-base-dark;
+		}
+		h3 {
+			font-size: 2rem;
+		}
+	}
+
+	@include s.breakpoint(tablet) {
+		&__content {
+			flex-direction: row-reverse;
+			justify-content: center;
+			align-items: center;
+		}
+		&__title {
+			width: 44%;
+			h3 {
+				font-size: 2.4rem;
+			}
+		}
+		&__description {
+			width: 50%;
+		}
+	}
+	@include s.breakpoint(pc) {
+		&__title {
+			h3 {
+				font-size: 3rem;
+			}
+		}
+	}
+}

@@ -3,17 +3,20 @@
 @use "./../../foundation/system" as s;
 
 .p-about {
-	&__content {
-		height: 50vh;
+	&__description {
+		font-size: 20px;
+		max-width: 800px;
+		margin: 0 auto 48px;
+	}
+
+	&__bg {
+		height: 32vh;
 		width: 100vw;
 		margin: 0 calc(50% - 50vw);
-		padding: 10px 20px;
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		background: url(https://images.unsplash.com/photo-1477959858617-67f85cf4f1df);
+		background: url(https://images.unsplash.com/photo-1530977875151-aae9742fde19);
 		background-size: cover;
 		background-position: center;
+		background-attachment: fixed;
 
 		position: relative;
 		z-index: 0;
@@ -27,11 +30,6 @@
 			left: -5px;
 			right: -5px;
 			background-color: rgba($color: s.$c-body, $alpha: 0.6);
-		}
-
-		p {
-			max-width: 1220px;
-			color: s.$c-base;
 		}
 	}
 
