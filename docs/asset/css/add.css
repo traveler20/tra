@@ -1,0 +1,58 @@
+/* 最大幅と余白の調整 */
+.header__contentsWrapper,
+.container {
+	max-width: 1000px;
+	min-width: 0;
+	padding: 0px 18px;
+}
+
+/* NEWS一覧の中央寄せ */
+.page-_top .notion-collection {
+	max-width: 1000px;
+	min-width: 0;
+	padding: 0px 18px;
+	margin: 0 auto;
+}
+/* NEWSセクションの下余白調整 */
+.p-news.c-section {
+	padding-bottom: 0;
+}
+/* NEWSセクションの余白調整 */
+.c-button {
+	margin-top: 24px;
+	margin-bottom: 120px;
+}
+/* NEWSセクションの記事一覧タイトル非表示 */
+.page-_top
+	#block-c2a4ed27b19d4390814c0cfb28b5a456
+	.notion-collection-header-title {
+	display: none;
+}
+
+/* TOPページのスタイリング */
+/* Notion全体の幅調整 */
+.page-_top .container {
+	max-width: none;
+	padding: 0;
+}
+/* TOPページのタイトル */
+.page-_top .coverImage,
+.page-_top .titleSection {
+	display: none;
+}
+
+/* Notion全体の調整 */
+.page-_top .contents.no-icon {
+	padding-top: 0;
+}
+
+/* TOP非表示エリア非表示 */
+#section-block-1209c4b2be9e448aad8db87b5452cafd {
+	display: none;
+}
+
+/* 共通要素 */
+/* タイトル */
+.title {
+	font-family: "Cormorant Garamond", serif;
+}
