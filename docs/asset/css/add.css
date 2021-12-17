@@ -74,7 +74,20 @@
 	margin: 0 auto;
 }
 /* Notion埋め込みアイコン非表示 */
-.page-_top .notion-page-title-icon {
+.notion-page-title-icon {
+	display: none;
+}
+/* Notion埋め込みテーブルタイトル・線削除 */
+.notion-table-header,
+.notion-table-header-placeholder {
+	display: none;
+}
+/* tableのセンタリング */
+.notion-table-row {
+	justify-content: center;
+}
+/* 作成日時の時間非表示 */
+.notion-property-created-time {
 	display: none;
 }
 
