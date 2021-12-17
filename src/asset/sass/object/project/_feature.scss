@@ -3,35 +3,7 @@
 @use "./../../foundation/system" as s;
 
 .p-feature {
-	&__content {
-		display: flex;
-		flex-wrap: wrap;
-		justify-content: center;
-		align-items: center;
-		gap: 40px;
-
-		> dt,
-		> dd {
-			width: 100%;
-		}
-	}
-
 	@include s.breakpoint(tablet) {
-		// c-section
-		.c-section__title {
-			text-align: left;
-		}
-		.c-section__lead {
-			display: block;
-		}
-
-		&__content {
-			flex-direction: row-reverse;
-			> dt,
-			> dd {
-				width: 44%;
-			}
-		}
 	}
 	@include s.breakpoint(pc) {
 	}
