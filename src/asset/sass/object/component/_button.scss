@@ -3,11 +3,6 @@
 @use "./../../foundation/system" as s;
 
 .c-button {
-	&Block {
-		max-width: 1220px;
-		margin: 0 auto;
-		text-align: center;
-	}
 	display: inline-block;
 	padding: 5px 32px;
 	font-size: 2rem;
@@ -22,6 +17,12 @@
 	&:hover {
 		color: s.$c-accent;
 		background-color: transparent;
+	}
+
+	&Block {
+		max-width: 1220px;
+		margin: 0 auto;
+		text-align: center;
 	}
 
 	@include s.breakpoint(tablet) {

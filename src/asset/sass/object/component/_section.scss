@@ -22,9 +22,16 @@
 		font-size: 6.4rem;
 		font-weight: bold;
 		@include s.garamond(bold);
-
 		letter-spacing: 8px;
 		margin: 0 auto 12px;
+		opacity: 0;
+		transform: translate(0, 100%);
+		transition: 1s cubic-bezier(0.22, 1, 0.36, 1);
+
+		&.is-show {
+			opacity: 1;
+			transform: translate(0, 0);
+		}
 	}
 	&__lead {
 		display: table;
