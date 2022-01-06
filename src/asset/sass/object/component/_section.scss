@@ -8,6 +8,10 @@
 	// &:nth-of-type(even) {
 	// 	background-color: s.$c-base;
 	// }
+	// 仮のスタイリング
+	&.p-about {
+		background-color: s.$c-base;
+	}
 
 	&__inner {
 		max-width: 1220px;

@@ -1,0 +1,41 @@
+/* p-news
+--------------------------- */
+@use "./../../foundation/system" as s;
+
+.p-news {
+	&__lists {
+		max-width: 700px;
+		margin: 0 auto 36px;
+	}
+	&__list {
+		a {
+			color: s.$c-body;
+			&:after {
+				height: 0;
+			}
+			&:hover {
+				opacity: 0.7;
+			}
+
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+		}
+		span {
+			color: s.$c-base;
+			background-color: s.$c-accent;
+			border-radius: 4px;
+			padding: 5px 16px;
+			margin-right: 16px;
+		}
+
+		& + li {
+			margin-top: 10px;
+		}
+	}
+
+	@include s.breakpoint(tablet) {
+	}
+	@include s.breakpoint(pc) {
+	}
+}
